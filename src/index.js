@@ -14,15 +14,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     getDogs();
     
     
-    function onlyGoodDogs() {
-        fetch(`http://localhost:3000/pups`)
-        .then (resp => resp.json())
-        .then(data => data.forEach((elem)=>{
-            if (elem.isGoodDog === true) {
-                renderDog(elem);
-            }
-        }))
-    }
+    
     
     
         
